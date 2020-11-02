@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://garfieldtto.github.io/sitemap.xml
+Sitemap: https://garfieldTTo.github.io/sitemap.xml
