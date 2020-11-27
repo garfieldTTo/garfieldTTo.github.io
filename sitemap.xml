@@ -16,13 +16,6 @@
   </url>
   
   <url>
-    <loc>https://garfieldTTo.github.io/post/blog/</loc>
-    <lastmod>2020-11-27T09:40:23+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://garfieldTTo.github.io/post/</loc>
     <lastmod>2020-11-27T09:40:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -31,6 +24,13 @@
   
   <url>
     <loc>https://garfieldTTo.github.io/categories/shardingsphere/</loc>
+    <lastmod>2020-11-27T09:40:23+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://garfieldTTo.github.io/post/blog/</loc>
     <lastmod>2020-11-27T09:40:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
