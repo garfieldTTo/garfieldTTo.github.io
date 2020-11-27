@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Fei的Blog</title>
-    <link>https://garfieldTTo.github.io/post/</link>
-    <description>Recent content in Posts on Fei的Blog</description>
+    <title>ShardingSphere on Fei的Blog</title>
+    <link>https://garfieldTTo.github.io/categories/shardingsphere/</link>
+    <description>Recent content in ShardingSphere on Fei的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2020 09:40:23 +0000</lastBuildDate><atom:link href="https://garfieldTTo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Nov 2020 09:40:23 +0000</lastBuildDate><atom:link href="https://garfieldTTo.github.io/categories/shardingsphere/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac 自动</title>
       <link>https://garfieldTTo.github.io/post/blog/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://garfieldTTo.github.io/post/blog/</guid>
       <description>问题 ShardingSphere 分库分表 用到除法路由: %s_${(%s / %s) %s %d} 报了异常 ### Cause: java.lang.UnsupportedOperationException: Cannot use mod() on this number type: java.math.BigDecimal with value: 0.25 解决方案 查看网上资料 Java的整数相除结果是整数，但是对于inli</description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://garfieldTTo.github.io/post/blog1/</link>
-      <pubDate>Mon, 02 Nov 2020 16:00:51 +0800</pubDate>
-      
-      <guid>https://garfieldTTo.github.io/post/blog1/</guid>
-      <description>测试</description>
     </item>
     
   </channel>

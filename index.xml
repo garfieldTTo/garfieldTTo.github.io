@@ -6,7 +6,7 @@
     <description>Recent content on Fei的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Nov 2020 16:00:51 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2020 09:40:23 +0000</lastBuildDate>
     
         <atom:link href="https://garfieldTTo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,15 +14,21 @@
     <item>
       <title>Mac 自动</title>
       <link>https://garfieldTTo.github.io/post/blog/</link>
-      <pubDate>Mon, 02 Nov 2020 16:00:51 +0800</pubDate>
+      <pubDate>Fri, 27 Nov 2020 09:40:23 +0000</pubDate>
       
       <guid>https://garfieldTTo.github.io/post/blog/</guid>
       
-        <description>&lt;h1 id=&#34;test&#34;&gt;test&lt;/h1&gt;
-&lt;h2 id=&#34;test-1&#34;&gt;test&lt;/h2&gt;
-&lt;h3 id=&#34;test-2&#34;&gt;test&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;test&lt;/code&gt;
-&lt;img src=&#34;https://garfieldTTo.github.io/media/jiafei.jpg&#34; alt=&#34;加菲猫&#34;&gt;&lt;/p&gt;
+        <description>&lt;h1 id=&#34;问题&#34;&gt;问题&lt;/h1&gt;
+&lt;h2 id=&#34;shardingsphere-分库分表-用到除法路由&#34;&gt;ShardingSphere 分库分表 用到除法路由:&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;%s_${(%s / %s) %s %d}&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;报了异常&#34;&gt;报了异常&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;### Cause: java.lang.UnsupportedOperationException: Cannot use mod() on this number type: java.math.BigDecimal with value: 0.25&lt;/code&gt;
+&lt;img src=&#34;https://garfieldTTo.github.io/media/sharding_Q.png&#34; alt=&#34;异常&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;解决方案&#34;&gt;解决方案&lt;/h1&gt;
+&lt;h2 id=&#34;查看网上资料&#34;&gt;查看网上资料&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Java的整数相除结果是整数，但是对于inline表达式中的Groovy语法则不同，整数相除结果是浮点数。 想获得除法整数结果需要将A/B改为A.intdiv(B)。&lt;/code&gt;
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/162960681&#34;&gt;转载自&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;改为-intdiv-配置方式后路由正常&#34;&gt;改为 &amp;ldquo;intdiv&amp;rdquo; 配置方式后路由正常&lt;/h2&gt;
 </description>
       
     </item>

@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fei" />
-  <meta name="description" content="test test test test" />
+  <meta name="description" content="问题 ShardingSphere 分库分表 用到除法路由: %s_${(%s / %s) %s %d} 报了异常 ### Cause: java.lang.UnsupportedOperationException: Cannot use mod() on this number type: java.math.BigDecimal with value: 0.25 解决方案 查看网上资料 Java的整数相除结果是整数，但是对于inli" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -60,23 +60,23 @@
 
 
 <meta property="og:title" content="Mac 自动" />
-<meta property="og:description" content="test test test test" />
+<meta property="og:description" content="问题 ShardingSphere 分库分表 用到除法路由: %s_${(%s / %s) %s %d} 报了异常 ### Cause: java.lang.UnsupportedOperationException: Cannot use mod() on this number type: java.math.BigDecimal with value: 0.25 解决方案 查看网上资料 Java的整数相除结果是整数，但是对于inli" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://garfieldTTo.github.io/post/blog/" />
-<meta property="article:published_time" content="2020-11-02T16:00:51+08:00" />
-<meta property="article:modified_time" content="2020-11-02T16:00:51+08:00" />
+<meta property="article:published_time" content="2020-11-27T09:40:23+00:00" />
+<meta property="article:modified_time" content="2020-11-27T09:40:23+00:00" />
 <meta itemprop="name" content="Mac 自动">
-<meta itemprop="description" content="test test test test">
-<meta itemprop="datePublished" content="2020-11-02T16:00:51+08:00" />
-<meta itemprop="dateModified" content="2020-11-02T16:00:51+08:00" />
-<meta itemprop="wordCount" content="4">
+<meta itemprop="description" content="问题 ShardingSphere 分库分表 用到除法路由: %s_${(%s / %s) %s %d} 报了异常 ### Cause: java.lang.UnsupportedOperationException: Cannot use mod() on this number type: java.math.BigDecimal with value: 0.25 解决方案 查看网上资料 Java的整数相除结果是整数，但是对于inli">
+<meta itemprop="datePublished" content="2020-11-27T09:40:23+00:00" />
+<meta itemprop="dateModified" content="2020-11-27T09:40:23+00:00" />
+<meta itemprop="wordCount" content="144">
 
 
 
-<meta itemprop="keywords" content="测试tag," />
+<meta itemprop="keywords" content="问题," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mac 自动"/>
-<meta name="twitter:description" content="test test test test"/>
+<meta name="twitter:description" content="问题 ShardingSphere 分库分表 用到除法路由: %s_${(%s / %s) %s %d} 报了异常 ### Cause: java.lang.UnsupportedOperationException: Cannot use mod() on this number type: java.math.BigDecimal with value: 0.25 解决方案 查看网上资料 Java的整数相除结果是整数，但是对于inli"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -323,11 +323,11 @@
       <h1 class="post-title">Mac 自动</h1>
       
       <div class="post-meta">
-        <time datetime="2020-11-02" class="post-time">
-          2020-11-02
+        <time datetime="2020-11-27" class="post-time">
+          2020-11-27
         </time>
         <div class="post-category">
-            <a href="https://garfieldTTo.github.io/categories/%E6%B5%8B%E8%AF%95cate/"> 测试cate </a>
+            <a href="https://garfieldTTo.github.io/categories/shardingsphere/"> ShardingSphere </a>
             
           </div>
         
@@ -347,11 +347,13 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#test-1">test</a>
-      <ul>
-        <li><a href="#test-2">test</a></li>
-      </ul>
-    </li>
+    <li><a href="#shardingsphere-分库分表-用到除法路由">ShardingSphere 分库分表 用到除法路由:</a></li>
+    <li><a href="#报了异常">报了异常</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#查看网上资料">查看网上资料</a></li>
+    <li><a href="#改为-intdiv-配置方式后路由正常">改为 &ldquo;intdiv&rdquo; 配置方式后路由正常</a></li>
   </ul>
 </nav>
   </div>
@@ -359,11 +361,17 @@
 
     
     <div class="post-content">
-      <h1 id="test">test</h1>
-<h2 id="test-1">test</h2>
-<h3 id="test-2">test</h3>
-<p><code>test</code>
-<img src="/media/jiafei.jpg" alt="加菲猫"></p>
+      <h1 id="问题">问题</h1>
+<h2 id="shardingsphere-分库分表-用到除法路由">ShardingSphere 分库分表 用到除法路由:</h2>
+<p><code>%s_${(%s / %s) %s %d}</code></p>
+<h2 id="报了异常">报了异常</h2>
+<p><code>### Cause: java.lang.UnsupportedOperationException: Cannot use mod() on this number type: java.math.BigDecimal with value: 0.25</code>
+<img src="/media/sharding_Q.png" alt="异常"></p>
+<h1 id="解决方案">解决方案</h1>
+<h2 id="查看网上资料">查看网上资料</h2>
+<p><code>Java的整数相除结果是整数，但是对于inline表达式中的Groovy语法则不同，整数相除结果是浮点数。 想获得除法整数结果需要将A/B改为A.intdiv(B)。</code>
+<a href="https://zhuanlan.zhihu.com/p/162960681">转载自</a></p>
+<h2 id="改为-intdiv-配置方式后路由正常">改为 &ldquo;intdiv&rdquo; 配置方式后路由正常</h2>
 
     </div>
 
@@ -376,7 +384,7 @@
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://garfieldTTo.github.io/tags/%E6%B5%8B%E8%AF%95tag/">测试tag</a>
+          <a href="https://garfieldTTo.github.io/tags/%E9%97%AE%E9%A2%98/">问题</a>
           
         </div>
 
